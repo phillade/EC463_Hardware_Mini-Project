@@ -16,8 +16,8 @@ import cv2
 import numpy as np
 
 #create VideoCapture object and read from video file
-#cap = cv2.VideoCapture('cars.mp4')
-cap = cv2.VideoCapture('cars_%03d.jpg')
+cap = cv2.VideoCapture('cars.mp4')
+#cap = cv2.VideoCapture('cars_%03d.jpg')
 #cap = cv2.VideoCapture('cars_480.mp4')
 #cap = cv2.VideoCapture('cars_360.mp4')
 

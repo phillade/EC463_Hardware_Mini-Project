@@ -61,7 +61,7 @@ Matplotlib <br/>
 Opencv-python <br/>
 
 ### Hardware utilized:
-Pi Zero W <br/>
+Pi Zero W - The CPU serial number is 00000000acb920d9 <br/>
 Pi 2 B <br/>
 Pi Camera <br/>
 Micro-USB cable <br/>
