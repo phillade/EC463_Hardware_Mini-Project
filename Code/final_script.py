@@ -8,13 +8,16 @@ https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/5
 '''
 
 # import necessary libraries
-from picamera import PiCamera
+#from picamera import PiCamera
 from time import sleep
 import cv2
 import subprocess
+import h5py
+import numpy as np
+
+'''
 
 ## function defines
-
 # create instance of the camera
 camera = PiCamera()
 
@@ -30,15 +33,15 @@ camera.stop_preview()
 
 # Run bash script to change video.h264 to video.mp4
 rc = subprocess.call('MP4Box -fps 30 -add video.h264 video.mp4', shell=True)
-if rc!=0:
+if rc != 0:
     print "bash script failed to run"
 
+'''
 # Load video into cv2
 cap = cv2.VideoCapture('video.mp4')
 
 # get car xml
 car_cascade = cv2.CascadeClassifier('cars.xml')
-file = open('output.txt', 'w')
 
 #read until video is completed
 while True:
@@ -68,11 +71,11 @@ while True:
 
     #out.write(frame) # writes to output file
     print "{}".format(car_count)
-    file.write("{}\n".format(car_count))
+    with h5py.File('mydat.h5', 'w') as f:
+        f['dat'] = car_count
 
 #release the videocapture object
 cap.release()
 
 #close all the frames
 cv2.destroyAllWindows()
-file.close()

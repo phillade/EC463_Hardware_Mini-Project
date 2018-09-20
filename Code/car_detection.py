@@ -16,7 +16,7 @@ import cv2
 import numpy as np
 
 #create VideoCapture object and read from video file
-cap = cv2.VideoCapture('cars.mp4')
+cap = cv2.VideoCapture('bicycle2.mp4')
 #cap = cv2.VideoCapture('cars_%03d.jpg')
 #cap = cv2.VideoCapture('cars_480.mp4')
 #cap = cv2.VideoCapture('cars_360.mp4')
@@ -25,7 +25,7 @@ cap = cv2.VideoCapture('cars.mp4')
 #out = cv2.VideoWriter('output.mp4', -1, 20.0, (640,480))
 
 #use trained cars XML classifiers
-car_cascade = cv2.CascadeClassifier('cars.xml')
+car_cascade = cv2.CascadeClassifier('bicycle.xml')
 
 file = open('output.txt', 'w')
 
