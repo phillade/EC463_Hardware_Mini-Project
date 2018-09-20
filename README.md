@@ -3,6 +3,12 @@ Hardware mini-project for Senior Design
 
 The cpu serial number is: 00000000acb920d9
 
+Individual contribution:
+
+Jinzhi Han: Assembling device, SSH into Raspberry Pi and Video filming 
+
+Phillip Teng: 
+
 #References
 The OpenCV example was based off the following youtube video:
 https://www.youtube.com/watch?v=IM9hJte4DZY
