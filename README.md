@@ -16,3 +16,4 @@ https://www.youtube.com/watch?v=IM9hJte4DZY
 The code was modified to utilize the Picamera python library to take raspberry pi camera inputs.
 More information on the Picamera library can be found here: https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
 
+More detailed references can be found on the Report page under Wiki and also in the Report.md file.
