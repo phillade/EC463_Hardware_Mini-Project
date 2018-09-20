@@ -7,7 +7,7 @@ Individual contribution:
 
 Jinzhi Han: Assembling device, SSH into Raspberry Pi and Video filming 
 
-Phillip Teng: 
+Phillip Teng: Wrote the testing script and final code for Raspberry Pi Zero and Pi B. Provided testing results and wrote the wiki page for this project.
 
 #References
 The OpenCV example was based off the following youtube video:
