@@ -16,7 +16,8 @@ Design Methodology:
 Figure 1: Showing the setup for the Pi 2 B.
 ![Car detection algorithm](https://i.imgur.com/aF1naWq.png)
 Figure 2: Showing the sample output of the video feed in car detection.
-
+![SSHing into Pi](https://i.imgur.com/wfaSH5f.png)
+Figure 3: Showing sucessful SSH across the internet after determining the Pi IP address with "hostname -I".
 
 ## Process:
 The first thing we did was to install raspbian desktop version onto Pi Zero. After finagling with getting the internet to work, we installed all the required packages as detailed below. The process of getting SSH to work can be found in the second link under the section “References”. We used SCP to copy manage the transfer of files between our laptops and the Pi.
@@ -46,13 +47,15 @@ Another creative way that we could improve accuracy is to use the sound componen
 Part of future works we can do is to try other test cases. Much of the software development occurred with a front on view instead of a side on view of the cars and bicycle. The algorithm may or may not work better from the side, more testing is needed to reveal that.
 
 
-## References used:
+## Appendix:
+
+### References used:
 https://github.com/phillade/EC463_Mini-Project/
 https://desertbot.io/blog/headless-pi-zero-ssh-access-over-usb-windows
 https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
+http://ask.xmodulo.com/disable-desktop-gui-raspberry-pi.html
+https://github.com/BostonUniversitySeniorDesign/hardware-project-2018/wiki
 
-
-## Appendix:
 
 ### Python Packages installed:
 Pip <br/>
