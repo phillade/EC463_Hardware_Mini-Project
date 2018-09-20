@@ -14,7 +14,6 @@ import cv2
 import subprocess
 import h5py
 
-
 ## function defines
 # create instance of the camera
 camera = PiCamera()
@@ -47,7 +46,7 @@ while True:
 
     #capture frame by frame
     ret, frame = cap.read()
-
+    
     #convert video into gray scale of each frames
     try:
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
