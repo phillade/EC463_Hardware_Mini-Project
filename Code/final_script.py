@@ -8,14 +8,12 @@ https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/5
 '''
 
 # import necessary libraries
-#from picamera import PiCamera
+from picamera import PiCamera
 from time import sleep
 import cv2
 import subprocess
 import h5py
-import numpy as np
 
-'''
 
 ## function defines
 # create instance of the camera
@@ -36,7 +34,6 @@ rc = subprocess.call('MP4Box -fps 30 -add video.h264 video.mp4', shell=True)
 if rc != 0:
     print "bash script failed to run"
 
-'''
 # Load video into cv2
 cap = cv2.VideoCapture('video.mp4')
 
